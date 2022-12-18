@@ -212,7 +212,7 @@
 
 </section>
 
-<section id="eng-pics" class="section-padding">
+<!-- <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -287,23 +287,61 @@
             <div class="col-xs-12 section-border section-padding"></div>
         </div>
     </div>
-    <!--<div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="diamond floating-logo">
                 <img src="img/sketch-logo.png" alt="Sketch Logo">
                 <div class="ring"></div>
             </div>
         </div>
-    </div>-->
-</section>
+    </div>
+</section> 
+-->
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
+         data-property="{videoURL:'https://www.youtube.com/watch?v=xZqUr1MRg30',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
     </div>
     <div id="video-content">
         <h5>Bucuresti</h5>
-        <p>Little Paris</p>
+        <p>Micul Paris</p>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Cum ajung la biserica?</h3>
+        <p>Este chiar in centrul orasului.</p>
+    </div>
+    <div id="map-canvas"></div>
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Arata detalii
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Biserica Domnita Balasa</h5>
+                            <p>Strada Sfinții Apostoli 60, Bucuresti</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Cheama un Uber</a>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Arata harta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -327,11 +365,11 @@
                             <h5>Amalfi Alegria</h5>
                             <p>Logofatu Tautu, nr. 64, sector 3, Bucuresti</p>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <h5>Mr. Amit Roy</h5>
                             <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
                                 <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
@@ -426,8 +464,8 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>O poza face cat 1000 de cuvinte!</h3>
-                <p>Ajutati-ne sa surprindem momentul, adaugand tag-ul "RalucaSiBogdanWedding" fotografiilor voastre.
-                    <a href="https://instagram.com/explore/tags/RalucaSiBogdanWedding/" target="_blank">#RalucaSiBogdanWedding</a>
+                <p>Ajutati-ne sa surprindem momentul, adaugand tag-ul "R&BWedding" fotografiilor voastre.
+                    <a href="https://instagram.com/explore/tags/RalucaSiBogdanWedding/" target="_blank">#R&BWedding</a>
                 </p>
             </div>
         </div>
@@ -460,7 +498,7 @@
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {

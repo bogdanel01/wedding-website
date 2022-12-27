@@ -18,12 +18,13 @@
 }
 .btn-white {
 	font-size: 13px;
+	font-weight: bold;
 	border: solid 2px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	display: inline-block;
-	border-color: $txt-light;
+	border-color: #000;
 }
 .btn-white:hover, .btn-white:focus {
 	color: $accent-color;

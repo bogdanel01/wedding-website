@@ -273,7 +273,9 @@ function initMap() {
           });
 
         var infowindow = new google.maps.InfoWindow({
-                    content:"Hello World!"
+                    content:"BISERICA DOMNITA BALASA\
+                    Strada Sfinții Apostoli 60, \
+                    Bucuresti"
                 });
         
           const request = {

@@ -264,11 +264,18 @@ $(document).ready(function () {
 
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
-
+        var location2 = {lat: 45.4282532, lng: 26.1001835};
         var map = new google.maps.Map(document.getElementById("map-canvas"), {
             center: location,
             zoom: 18,
           });
+
+        var map2 = new google.maps.Map(document.getElementById("map-canvas2"), {
+            center: location2,
+            zoom: 18,
+          });
+
+        
 
         // var infowindow = new google.maps.InfoWindow({
         //             content:"BISERICA DOMNITA BALASA\
@@ -300,34 +307,7 @@ function initMap() {
         //    map.setCenter(results[0].geometry.location);
         //     }
         //   });
-          initMap2();
     }
-
-    function initMap2() {
-        var location = {lat: 44.4282532, lng: 26.1001835};
-
-        var map2 = new google.maps.Map(document.getElementById("map-canvas2"), {
-            center: location,
-            zoom: 18,
-          });
-        }
-
-
-
-
-// function initBBSRMap() {
-//     var la_fiesta = {lat: 44.4282532, lng: 26.1001835};
-//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-//         zoom: 15,
-//         center: la_fiesta,
-//         scrollwheel: false
-//     });
-
-//     var marker = new google.maps.Marker({
-//         position: la_fiesta,
-//         map: map
-//     });
-// }
 
 // alert_markup
 function alert_markup(alert_type, msg) {

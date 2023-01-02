@@ -272,7 +272,7 @@ function initMap() {
         
           const request = {
             query: "Biserica Domnita Balasa",
-            //fields: ["name", "geometry"],
+            fields: ["name", "geometry"],
           };
         
           service = new google.maps.places.PlacesService(map);

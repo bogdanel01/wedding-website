@@ -282,7 +282,6 @@ function initMap() {
           service = new google.maps.places.PlacesService(map);
           service.findPlaceFromQuery(request, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK && results) {
-              for (let i = 0; i < results.length; i++) {
                 const marker = new google.maps.Marker({
                     map,
                     position: results[0].geometry.location,
@@ -292,7 +291,7 @@ function initMap() {
                     infowindow.open(map);
                   });
                 console.log(results);
-              }
+              
         
               map.setCenter(results[0].geometry.location);
             }

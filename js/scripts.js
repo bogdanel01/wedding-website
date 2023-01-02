@@ -267,7 +267,7 @@ function initMap() {
 
         var map = new google.maps.Map(document.getElementById("map-canvas"), {
             center: location,
-            zoom: 15,
+            zoom: 20,
           });
         
           const request = {
@@ -280,6 +280,7 @@ function initMap() {
             if (status === google.maps.places.PlacesServiceStatus.OK && results) {
               for (let i = 0; i < results.length; i++) {
                 createMarker(results[i]);
+                console.log(results);
               }
         
               map.setCenter(results[0].geometry.location);

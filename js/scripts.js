@@ -289,7 +289,7 @@ function initMap() {
                     position: results[0].geometry.location,
                 });
                 google.maps.event.addListener(marker, "click", () => {
-                    infowindow.setContent(results[0].name || "");
+                    // infowindow.setContent(results[0].name || "");
                     infowindow.open(map);
                   });
                 console.log(results);

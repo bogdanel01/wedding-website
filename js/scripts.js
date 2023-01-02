@@ -272,36 +272,36 @@ function initMap() {
             zoom: 18,
           });
 
-        // var infowindow = new google.maps.InfoWindow({
-        //             content:"BISERICA DOMNITA BALASA\
-        //             Strada Sfinții Apostoli 60, \
-        //             Bucuresti"
-        //         });
+        var infowindow = new google.maps.InfoWindow({
+                    content:"BISERICA DOMNITA BALASA\
+                    Strada Sfinții Apostoli 60, \
+                    Bucuresti"
+                });
         
-        //   const request = {
-        //     query: "Biserica Domnita Balasa",
-        //     fields: ["name", "geometry"],
-        //   };
+          const request = {
+            query: "Biserica Domnita Balasa",
+            fields: ["name", "geometry"],
+          };
         
-        //   service = new google.maps.places.PlacesService(map);
-        //   service.findPlaceFromQuery(request, (results, status) => {
-        //     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
-        //         const marker = new google.maps.Marker({
-        //             map,
-        //             position: results[0].geometry.location,
-        //             animation:google.maps.Animation.BOUNCE
-        //         });
+          service = new google.maps.places.PlacesService(map);
+          service.findPlaceFromQuery(request, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+                const marker = new google.maps.Marker({
+                    map,
+                    position: results[0].geometry.location,
+                    animation:google.maps.Animation.BOUNCE
+                });
 
-        //    google.maps.event.addListener(marker, 'click', function() {
-        //          infowindow.open(map,marker);
-        //     });
+           google.maps.event.addListener(marker, 'click', function() {
+                 infowindow.open(map,marker);
+            });
 
-        //         console.log(results);
+                console.log(results);
               
         
-        //    map.setCenter(results[0].geometry.location);
-        //     }
-        //   });
+           map.setCenter(results[0].geometry.location);
+            }
+          });
     
     }
 

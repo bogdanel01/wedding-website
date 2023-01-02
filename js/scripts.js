@@ -240,27 +240,57 @@ $(document).ready(function () {
 /********************** Extras **********************/
 //Domnita Balasa: 44.4282532,26.1001835
 // Google map
-function initMap() {
-    var location = {lat: 44.4282532, lng: 26.1001835};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
-        scrollwheel: false
-    });
+// function initMap() {
+//     var location = {lat: 44.4282532, lng: 26.1001835};
+//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
+//         zoom: 15,
+//         center: location,
+//         scrollwheel: false
+//     });
 
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
+//     var marker = new google.maps.Marker({
+//         position: location,
+//         map: map
+//     });
 
-var infowindow = new google.maps.InfoWindow({
-    content:"Hello World!"
-  });
+//     var infowindow = new google.maps.InfoWindow({
+//         content:"Hello World!"
+//     });
   
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
-}
+//     google.maps.event.addListener(marker, 'click', function() {
+//         infowindow.open(map,marker);
+//     });
+// }
+
+function initMap() {
+        var location = {lat: 44.4282532, lng: 26.1001835};
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), {
+            center: location,
+            zoom: 15,
+          });
+        
+          const request = {
+            query: "Biserica Domnita Balasa",
+            fields: ["name", "geometry"],
+          };
+        
+          service = new google.maps.places.PlacesService(map);
+          service.findPlaceFromQuery(request, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+              for (let i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+              }
+        
+              map.setCenter(results[0].geometry.location);
+            }
+          });
+    
+    }
+
+
+
+
 // function initBBSRMap() {
 //     var la_fiesta = {lat: 44.4282532, lng: 26.1001835};
 //     var map = new google.maps.Map(document.getElementById('map-canvas'), {

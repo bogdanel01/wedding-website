@@ -274,11 +274,11 @@ $(document).ready(function () {
 
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
-        var location2 = {lat: 45.4282532, lng: 26.1001835};
-        // var map = new google.maps.Map(document.getElementById("map-canvas"), {
-        //     center: location,
-        //     zoom: 18,
-        //   });
+        var location2 = {lat: 44.41939584917237, lng: 26.11783108865338};
+        var map = new google.maps.Map(document.getElementById("map-canvas"), {
+            center: location,
+            zoom: 18,
+          });
 
         var map2 = new google.maps.Map(document.getElementById("map-canvas2"), {
             center: location2,

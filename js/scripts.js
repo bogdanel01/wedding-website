@@ -175,6 +175,16 @@ $(document).ready(function () {
         $('#btn-show-content').toggleClass('toggle-map-content');
     });
 
+        /********************** Toggle Map Content 2**********************/
+        $('#btn-show-map2').click(function () {
+            $('#map-content2').toggleClass('toggle-map-content2');
+            $('#btn-show-content2').toggleClass('toggle-map-content2');
+        });
+        $('#btn-show-content2').click(function () {
+            $('#map-content2').toggleClass('toggle-map-content2');
+            $('#btn-show-content2').toggleClass('toggle-map-content2');
+        });
+
     /********************** Add to Calendar **********************/
     var myCalendar = createCalendar({
         options: {

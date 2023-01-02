@@ -286,10 +286,10 @@ function initMap() {
           });
 
 
-            var marker = new google.maps.Marker({
-        position: location2,
-        map: map2
-    });
+        // var marker = new google.maps.Marker({
+        //     position: location2,
+        //     map: map2
+        // });
         
 
         // var infowindow = new google.maps.InfoWindow({

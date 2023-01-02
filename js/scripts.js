@@ -300,7 +300,7 @@ function initMap() {
         //    map.setCenter(results[0].geometry.location);
         //     }
         //   });
-    
+          initMap2();
     }
 
     function initMap2() {

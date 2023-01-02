@@ -272,7 +272,9 @@ function initMap() {
             zoom: 18,
           });
 
-        infowindow = new google.maps.InfoWindow();
+        var infowindow = new google.maps.InfoWindow({
+                    content:"Hello World!"
+                });
         
           const request = {
             query: "Biserica Domnita Balasa",

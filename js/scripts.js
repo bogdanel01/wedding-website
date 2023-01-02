@@ -261,13 +261,11 @@ $(document).ready(function () {
 //         infowindow.open(map,marker);
 //     });
 // }
-var map;
-
 
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
 
-        map = new google.maps.Map(document.getElementById("map-canvas"), {
+        var map = new google.maps.Map(document.getElementById("map-canvas"), {
             center: location,
             zoom: 18,
           });
@@ -305,19 +303,14 @@ function initMap() {
     
     }
 
-    // function createMarker(place) {
-    //     if (!place.geometry || !place.geometry.location) return;
-      
-    //     const marker = new google.maps.Marker({
-    //       map,
-    //       position: place.geometry.location,
-    //     });
-      
-    //     google.maps.event.addListener(marker, "click", () => {
-    //       infowindow.setContent(place.name || "");
-    //       infowindow.open(map);
-    //     });
-    //   }
+    function initMap2() {
+        var location = {lat: 44.4282532, lng: 26.1001835};
+
+        var map2 = new google.maps.Map(document.getElementById("map-canvas2"), {
+            center: location,
+            zoom: 18,
+          });
+        }
 
 
 

@@ -288,14 +288,15 @@ function initMap() {
                     map,
                     position: results[0].geometry.location,
                 });
-                google.maps.event.addListener(marker, "click", () => {
-                    // infowindow.setContent(results[0].name || "");
-                    infowindow.open(map);
-                  });
+
+           google.maps.event.addListener(marker, 'click', function() {
+                 infowindow.open(map,marker);
+            });
+
                 console.log(results);
               
         
-              map.setCenter(results[0].geometry.location);
+           map.setCenter(results[0].geometry.location);
             }
           });
     

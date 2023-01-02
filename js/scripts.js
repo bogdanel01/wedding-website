@@ -261,11 +261,11 @@ $(document).ready(function () {
 //         infowindow.open(map,marker);
 //     });
 // }
-
+var map;
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
 
-        var map = new google.maps.Map(document.getElementById("map-canvas"), {
+        map = new google.maps.Map(document.getElementById("map-canvas"), {
             center: location,
             zoom: 20,
           });

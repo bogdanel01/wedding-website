@@ -314,7 +314,8 @@ function initMap() {
         //         console.log(results);
               
         
-        //    map.setCenter(results[0].geometry.location);
+            map.setCenter(location);
+            map2.setCenter(location2);
         //     }
         //   });
     }

@@ -262,6 +262,8 @@ $(document).ready(function () {
 //     });
 // }
 var map;
+
+
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
 
@@ -269,6 +271,8 @@ function initMap() {
             center: location,
             zoom: 20,
           });
+
+        infowindow = new google.maps.InfoWindow();
         
           const request = {
             query: "Biserica Domnita Balasa",

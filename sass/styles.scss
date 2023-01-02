@@ -765,6 +765,23 @@ Google map
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
+#map-canvas2 {
+  height: 500px;
+  width: 100%;
+}
+#map-content-wrapper2 {
+  position: relative;
+  margin-top: -502px;
+  margin-bottom: 150px;
+}
+#map-content2 {
+  margin-top: 40px;
+  padding: 50px 60px;
+  background: #fff;
+  -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+  transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
+}
+
 #btn-show-content {
   padding: 20px;
   background: #fff;

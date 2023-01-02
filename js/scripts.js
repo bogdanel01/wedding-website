@@ -269,7 +269,7 @@ function initMap() {
 
         map = new google.maps.Map(document.getElementById("map-canvas"), {
             center: location,
-            zoom: 17,
+            zoom: 18,
           });
 
         infowindow = new google.maps.InfoWindow();

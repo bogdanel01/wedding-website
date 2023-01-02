@@ -279,7 +279,14 @@ function initMap() {
           service.findPlaceFromQuery(request, (results, status) => {
             if (status === google.maps.places.PlacesServiceStatus.OK && results) {
               for (let i = 0; i < results.length; i++) {
-                createMarker(results[i]);
+                const marker = new google.maps.Marker({
+                    map,
+                    position: results[0].geometry.location,
+                });
+                google.maps.event.addListener(marker, "click", () => {
+                    infowindow.setContent(results[0].name || "");
+                    infowindow.open(map);
+                  });
                 console.log(results);
               }
         
@@ -289,19 +296,19 @@ function initMap() {
     
     }
 
-    function createMarker(place) {
-        if (!place.geometry || !place.geometry.location) return;
+    // function createMarker(place) {
+    //     if (!place.geometry || !place.geometry.location) return;
       
-        const marker = new google.maps.Marker({
-          map,
-          position: place.geometry.location,
-        });
+    //     const marker = new google.maps.Marker({
+    //       map,
+    //       position: place.geometry.location,
+    //     });
       
-        google.maps.event.addListener(marker, "click", () => {
-          infowindow.setContent(place.name || "");
-          infowindow.open(map);
-        });
-      }
+    //     google.maps.event.addListener(marker, "click", () => {
+    //       infowindow.setContent(place.name || "");
+    //       infowindow.open(map);
+    //     });
+    //   }
 
 
 

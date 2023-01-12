@@ -551,16 +551,16 @@ var MD5 = function (string) {
 
 
 
-const year = new Date().getFullYear();
-const fourthOfJuly = new Date(year, 6,4).getTime();
-const fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
-const month = new Date().getMonth();
+year = new Date().getFullYear();
+fourthOfJuly = new Date(year, 6,4).getTime();
+fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
+month = new Date().getMonth();
 
 // countdown
 let timer = setInterval(function() {
 
   // get today's date
-  const today = new Date().getTime();
+  today = new Date().getTime();
 
   // get the difference
   let diff;

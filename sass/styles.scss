@@ -966,13 +966,13 @@ body {
   background: $dark;
 }
 
-.container {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 650px;
-  height: 480px;
-}
+// .container {
+//   position: relative;
+//   margin: auto;
+//   overflow: hidden;
+//   width: 650px;
+//   height: 480px;
+// }
 
 h1 {
   font-family: $font;
@@ -1150,25 +1150,4 @@ h1 {
   background: $red;
   -webkit-clip-path: $star;
   clip-path: $star;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  text-transform: uppercase;
-  padding: 10px;
-  font-family: $font;
-  font-size: 0.7em;
-  p {
-    letter-spacing: 3px;
-    color: $red;
-  }
-  a {
-    color: $white;
-    text-decoration: none;
-    &:hover {
-      color: $blue;
-    }
-  }
 }

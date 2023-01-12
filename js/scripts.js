@@ -557,13 +557,13 @@ fourthOfJulyNextYear = new Date(year + 1, 6, 4).getTime();
 month = new Date().getMonth();
 
 // countdown
-let timer = setInterval(function() {
+timer = setInterval(function() {
 
   // get today's date
   today = new Date().getTime();
 
   // get the difference
-  let diff;
+  diff;
   if(month > 6) {
     diff = fourthOfJulyNextYear - today;
   } else {
@@ -574,10 +574,10 @@ let timer = setInterval(function() {
 
 
   // math
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
   document.getElementById("timer").innerHTML =

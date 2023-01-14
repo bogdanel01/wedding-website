@@ -954,13 +954,19 @@ section#countdown {
   text-align: center;
 }
 
-.timer p, .timer span {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 50px;
+.timer p {
+  font-size: 36px;
   font-weight: bold;
   font-family: 'Great Vibes';
   color: #333;
   margin: 0;
+}
+
+.timer span {
+  font-family: 'Great Vibes';
+  font-size: 18px;
+  color: #999;
+  display: block;
 }
 
 

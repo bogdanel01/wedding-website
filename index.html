@@ -98,6 +98,7 @@
       <p class="seconds"></p>
       <span>Seconds</span>
     </div>
+    <div id="message"></div>
   </section>
 
 <section class="events section-padding" id="events">
@@ -409,10 +410,7 @@ var x = setInterval(function() {
   
   if (distance < 0) {
     clearInterval(x);
-    document.querySelector('.days').innerHTML = "This is the day!";
-    document.querySelector('.hours').innerHTML = "";
-    document.querySelector('.minutes').innerHTML = "";
-    document.querySelector('.seconds').innerHTML = "";
+    document.querySelector('#message').innerHTML = "This is the day!";
   } else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

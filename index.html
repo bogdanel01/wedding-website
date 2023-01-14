@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Great Vibes&amp;display=block" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
@@ -412,10 +413,10 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.querySelector('.days').innerHTML = days + "d ";
-  document.querySelector('.hours').innerHTML = hours + "h ";
-  document.querySelector('.minutes').innerHTML = minutes + "m ";
-  document.querySelector('.seconds').innerHTML = seconds + "s ";
+  document.querySelector('.days').innerHTML = days + " ";
+  document.querySelector('.hours').innerHTML = hours + " ";
+  document.querySelector('.minutes').innerHTML = minutes + " ";
+  document.querySelector('.seconds').innerHTML = seconds + " ";
 
   if (distance < 0) {
     clearInterval(x);

@@ -942,6 +942,7 @@ body.modal-open {
 
 
 section#countdown {
+  position: relative;
   width: fit-content;
   margin: 100px auto;
   text-align: center;
@@ -951,20 +952,14 @@ section#countdown {
   display: inline-block;
   margin: 10px;
   text-align: center;
-  font-family: 'Great Vibes';
+  position: absolute;
 }
 
-.timer p {
-  font-size: 64px;
+.timer p, .timer span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
   font-weight: bold;
-  // font-style: italic;
   font-family: 'Great Vibes';
   color: #333;
   margin: 0;
-}
-
-.timer span {
-  font-size: 18px;
-  color: #999;
-  display: block;
 }

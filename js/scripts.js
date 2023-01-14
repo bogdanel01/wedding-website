@@ -226,7 +226,7 @@ $(document).ready(function () {
 
         if ($('#phone').length !== 10) {
             console.log(data);
-            console.log($('#phone'));
+            console.log($('#phone').value);
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Numarul de telefon este incorect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxNtSzFZrJNXzHEauH7rTMex8ShcRZsHTldlGiD8MBr4rNpGCatGo_N6gyNPqLDqLLeCA/exec', data)

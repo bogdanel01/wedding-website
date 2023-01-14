@@ -224,9 +224,8 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Doar o secunda! </strong> Salvam confirmarea dumneavoastra chiar acum.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Codul de invitatie este incorect.'));
+        if (MD5($('#phone').length) !== 10) {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Numarul de telefon este incorect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxNtSzFZrJNXzHEauH7rTMex8ShcRZsHTldlGiD8MBr4rNpGCatGo_N6gyNPqLDqLLeCA/exec', data)
                 .done(function (data) {

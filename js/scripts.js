@@ -225,6 +225,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Doar o secunda! </strong> Salvam confirmarea dumneavoastra chiar acum.'));
 
         if ($('#phone').length !== 10) {
+            console.log($('#phone').length);
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Numarul de telefon este incorect.'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbxNtSzFZrJNXzHEauH7rTMex8ShcRZsHTldlGiD8MBr4rNpGCatGo_N6gyNPqLDqLLeCA/exec', data)

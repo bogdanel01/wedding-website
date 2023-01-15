@@ -246,31 +246,6 @@ $(document).ready(function () {
 
 });
 
-/********************** Extras **********************/
-//Domnita Balasa: 44.4282532,26.1001835
-// Google map
-// function initMap() {
-//     var location = {lat: 44.4282532, lng: 26.1001835};
-//     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-//         zoom: 15,
-//         center: location,
-//         scrollwheel: false
-//     });
-
-//     var marker = new google.maps.Marker({
-//         position: location,
-//         map: map
-//     });
-
-//     var infowindow = new google.maps.InfoWindow({
-//         content:"Hello World!"
-//     });
-  
-//     google.maps.event.addListener(marker, 'click', function() {
-//         infowindow.open(map,marker);
-//     });
-// }
-
 function initMap() {
         var location = {lat: 44.4282532, lng: 26.1001835};
         var location2 = {lat: 44.4189, lng: 26.1168};
@@ -283,45 +258,8 @@ function initMap() {
             center: location2,
             zoom: 18,
           });
-
-
-        // var marker = new google.maps.Marker({
-        //     position: location2,
-        //     map: map2
-        // });
-        
-
-        // var infowindow = new google.maps.InfoWindow({
-        //             content:"BISERICA DOMNITA BALASA\
-        //             Strada Sfinții Apostoli 60, \
-        //             Bucuresti"
-        //         });
-        
-        //   const request = {
-        //     query: "Biserica Domnita Balasa",
-        //     fields: ["name", "geometry"],
-        //   };
-        
-        //   service = new google.maps.places.PlacesService(map);
-        //   service.findPlaceFromQuery(request, (results, status) => {
-        //     if (status === google.maps.places.PlacesServiceStatus.OK && results) {
-        //         const marker = new google.maps.Marker({
-        //             map,
-        //             position: results[0].geometry.location,
-        //             animation:google.maps.Animation.BOUNCE
-        //         });
-
-        //    google.maps.event.addListener(marker, 'click', function() {
-        //          infowindow.open(map,marker);
-        //     });
-
-        //         console.log(results);
-              
-        
             map.setCenter(location);
             map2.setCenter(location2);
-        //     }
-        //   });
     }
 
 // alert_markup
